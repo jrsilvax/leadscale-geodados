@@ -140,3 +140,38 @@ try:
                     w.writerow(["" if c is None else c for c in row])
 except Exception as e:
     print("AVISO tabelas AP:", e)
+
+# 5) tabelas da amostra por área de ponderação (PEA, renda per capita, escolaridade, ocupação)
+TABELAS = {
+    "Tab7_1.xlsx": {4: "pop14", 5: "forca_trabalho", 6: "ocupados", 7: "desocupados", 8: "fora_forca"},
+    "Tab8_3.xlsx": {4: "pessoas_dpp", 7: "renda_pc_media", 10: "renda_pc_mediana"},
+    "Tab8_1.xlsx": {4: "ocupados_com_renda", 5: "renda_trab_media", 6: "renda_trab_mediana"},
+    "Tab2_2.xlsx": {4: "pop25", 5: "instr_fund_incompleto", 6: "instr_fund_completo", 7: "instr_medio_completo", 8: "instr_superior"},
+    "Tab7_4.xlsx": {4: "ocup_total", 5: "ocup_diretores_gerentes", 6: "ocup_profissionais", 7: "ocup_tecnicos"},
+}
+try:
+    import openpyxl
+    z = zipfile.ZipFile("tmp/tabelas_ap.zip")
+    ap = None
+    for n in z.namelist():
+        nome = n.rsplit("/", 1)[-1]
+        if nome not in TABELAS: continue
+        cols = TABELAS[nome]
+        wb = openpyxl.load_workbook(io.BytesIO(z.read(n)), read_only=True, data_only=True)
+        linhas = []
+        for row in wb.worksheets[0].iter_rows(values_only=True):
+            if not row or row[0] is None: continue
+            cod = str(row[0]).strip()
+            if not (cod.isdigit() and len(cod) == 7 and cod.startswith(str(UF_COD))): continue
+            reg = {"cd_mun": cod, "nm_mun": row[1], "cd_area_ponderacao": str(row[2]).strip(), "nm_area": row[3]}
+            for i, campo in cols.items():
+                v = row[i] if i < len(row) else None
+                reg[campo] = 0 if v in ("-", None, "") else v
+            linhas.append(reg)
+        t = pd.DataFrame(linhas)
+        print(nome, len(t), "áreas", flush=True)
+        ap = t if ap is None else ap.merge(t.drop(columns=["cd_mun", "nm_mun", "nm_area"]), on="cd_area_ponderacao", how="outer")
+    ap.to_csv(f"data/areas_ponderacao_{UF}.csv", index=False)
+    print("gravado", f"data/areas_ponderacao_{UF}.csv", len(ap), flush=True)
+except Exception as e:
+    print("AVISO tabelas AP (dados):", e)
