@@ -1,0 +1,153 @@
+Variáveis do Registro de Mortalidade,,,,,,
+VAR,NOME,POSIÇÃO INICIAL,POSIÇÃO FINAL,INT,DEC,TIPO
+M0010,"Grande Região
+1- Região Norte (uf=11 a 17)
+2- Região Nordeste (uf=21 a 29)  
+3- Região Sudeste (uf=31 a 33 e 35)
+4- Região Sul (uf=41 a 43)
+5- Região Centro-oeste (uf=50 a 53)",1,1,1,0,C 
+M0020,"Unidade da Federação
+11- Rondônia
+12- Acre
+13- Amazonas
+14- Roraima
+15- Pará
+16- Amapá
+17- Tocantins
+21- Maranhão
+22- Piauí
+23- Ceará
+24- Rio Grande do Norte
+25- Paraíba
+26- Pernambuco
+27- Alagoas
+28- Sergipe
+29- Bahia
+31- Minas Gerais
+32- Espírito Santo
+33- Rio de Janeiro
+35- São Paulo
+41- Paraná
+42- Santa Catarina
+43- Rio Grande do Sul
+50- Mato Grosso do Sul
+51- Mato Grosso
+52- Goiás
+53- Distrito Federal",2,3,2,0,A 
+M0030,Mesorregião,4,7,4,0,A 
+M0040,Microrregião,8,12,5,0,A 
+M0050,Região Geográfica Intermediária,13,16,4,0,A 
+M0060,Região Geográfica Imediata,17,22,6,0,A 
+M0070,Concentração urbana,23,29,7,0,A 
+M0080,Município,30,36,7,0,A 
+M0090,Área de Ponderação,37,46,10,0,A 
+M0100,Controle ,47,54,8,0,N
+M0101,Número de ordem da pessoa falecida,55,58,4,0,A 
+M0111,Peso Amostral (Versão acesso Controlado),59,74,3,13,N 
+M0120,"Situação do Setor
+    01  - Área urbana de alta densidade de edificações
+    02  - Área urbana de baixa densidade de edificações
+    03  - Núcleo urbano
+    05  - Povoado
+    06  - Núcleo rural
+    07  - Lugarejo
+    08  - Área rural (exclusive aglomerados)",75,76,2,0,C 
+M0130,"Espécie da unidade visitada
+    01  - Domicílio particular permanente ocupado
+    05  - Domicílio particular improvisado ocupado
+    06  - Domicílio coletivo com morador",77,78,2,0,C 
+M0140,"Situação do domicílio
+    1  - Urbana
+    2  - Rural",79,79,1,0,C 
+M0150,"Ano de ocorrência do óbito de morador do domicílio, categoria
+    1 - 2019
+    2 - 2020
+    3 - 2021
+    4 - 2022
+    9 - Ignorado
+Branco",80,80,1,0,C 
+M0151,"Mês e ano de ocorrência do óbito de morador do domicílio, categoria
+    01 - Janeiro de 2019
+    02 - Fevereiro de 2019
+    03 - Março de 2019
+    04 - Abril de 2019
+    05 - Maio de 2019
+    06 - Junho de 2019
+    07 - Julho de 2019
+    08 - Agosto de 2019
+    09 - Setembro de 2019
+    10 - Outubro de 2019
+    11 - Novembro de 2019
+    12 - Dezembro de 2019
+    13 - Janeiro de 2020
+    14 - Fevereiro de 2020
+    15 - Março de 2020
+    16 - Abril de 2020
+    17 - Maio de 2020
+    18 - Junho de 2020
+    19 - Julho de 2020
+    20 - Agosto de 2020
+    21 - Setembro de 2020
+    22 - Outubro de 2020
+    23 - Novembro de 2020
+    24 - Dezembro de 2020
+    25 - Janeiro de 2021
+    26 - Fevereiro de 2021
+    27 - Março de 2021
+    28 - Abril de 2021
+    29 - Maio de 2021
+    30 - Junho de 2021
+    31 - Julho de 2021
+    32 - Agosto de 2021
+    33 - Setembro de 2021
+    34 - Outubro de 2021
+    35 - Novembro de 2021
+    36 - Dezembro de 2021
+    37 - Janeiro de 2022
+    38 - Fevereiro de 2022
+    39 - Março de 2022
+    40 - Abril de 2022
+    41 - Maio de 2022
+    42 - Junho de 2022
+    43 - Julho de 2022
+    99 - Ignorado
+Branco",81,82,2,0,C 
+M0160,"Sexo da pessoa falecida do domicílio, categoria
+    1  - Masculino
+    2  - Feminino
+    9 - Ignorado",83,83,1,0,C 
+M0170,"Pessoa falecida, idade calculada, categoria
+    01 - 0 a 4 anos
+    02 - 5 a 9 anos
+    03 - 10 a 14 anos
+    04 - 15 a 19 anos
+    05 - 20 a 24 anos
+    06 - 25 a 29 anos
+    07 - 30 a 34 anos
+    08 - 35 a 39 anos
+    09 - 40 a 44 anos
+    10 - 45 a 49 anos
+    11 - 50 a 54 anos
+    12 - 55 a 59 anos
+    13 - 60 a 64 anos
+    14 - 65 a 69 anos
+    15 - 70 a 74 anos
+    16 - 75 a 79 anos
+    17 - 80 anos ou mais
+    99 - Idade ao falecer ignorada",84,85,2,0,C
+M0171,"Pessoa falecida, idade calculada, número",86,88,3,0,N 
+MM0150,"MARCA DE IMPUTAÇÃO NA M0150  
+0 - Não Imputado
+1 - Imputado",89,89,1,0,C
+MM0151,"MARCA DE IMPUTAÇÃO NA M0151  
+0 - Não Imputado
+1 - Imputado",90,90,1,0,C
+MM0160,"MARCA DE IMPUTAÇÃO NA M0160  
+0 - Não Imputado
+1 - Imputado",91,91,1,0,C
+MM0170,"MARCA DE IMPUTAÇÃO NA M0170  
+0 - Não Imputado
+1 - Imputado",92,92,1,0,C
+MM0171,"MARCA DE IMPUTAÇÃO NA M0171  
+0 - Não Imputado
+1 - Imputado",93,93,1,0,C

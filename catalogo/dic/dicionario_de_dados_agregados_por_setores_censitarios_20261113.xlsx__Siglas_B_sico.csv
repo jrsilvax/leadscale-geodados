@@ -1,0 +1,8 @@
+Sigla,Descrição
+DPPO,Domicílio Particular Permanente Ocupado
+DPIO,Domicílio Particular Improvisado Ocupado
+DPPV,Domicílio Particular Permanente Vago
+DPPUO,Domicílio Particular Permanente de Uso Ocasional
+DCCM,Domicílio Coletivo Com Morador
+DCSM,Domicílio Coletivo Sem Morador
+DPO,Domicílio Particular Ocupado (DPPO + DPIO)

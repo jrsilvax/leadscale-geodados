@@ -1,0 +1,93 @@
+Variáveis do Registro de Mortalidade,,,,,,
+VAR,NOME,POSIÇÃO INICIAL,POSIÇÃO FINAL,INT,DEC,TIPO
+M0010,"Grande Região
+1- Região Norte (uf=11 a 17)
+2- Região Nordeste (uf=21 a 29)  
+3- Região Sudeste (uf=31 a 33 e 35)
+4- Região Sul (uf=41 a 43)
+5- Região Centro-oeste (uf=50 a 53)",1,1,1,0,C 
+M0020,"Unidade da Federação
+11- Rondônia
+12- Acre
+13- Amazonas
+14- Roraima
+15- Pará
+16- Amapá
+17- Tocantins
+21- Maranhão
+22- Piauí
+23- Ceará
+24- Rio Grande do Norte
+25- Paraíba
+26- Pernambuco
+27- Alagoas
+28- Sergipe
+29- Bahia
+31- Minas Gerais
+32- Espírito Santo
+33- Rio de Janeiro
+35- São Paulo
+41- Paraná
+42- Santa Catarina
+43- Rio Grande do Sul
+50- Mato Grosso do Sul
+51- Mato Grosso
+52- Goiás
+53- Distrito Federal",2,3,2,0,A 
+M0100,Controle ,4,11,8,0,N
+M0101,Número de ordem da pessoa falecida,12,15,4,0,A 
+M0110,Peso Amostral (Versão acesso  Público),16,31,3,13,N 
+M0120,"Situação do Setor
+    01  - Área urbana de alta densidade de edificações
+    02  - Área urbana de baixa densidade de edificações
+    03  - Núcleo urbano
+    05  - Povoado
+    06  - Núcleo rural
+    07  - Lugarejo
+    08  - Área rural (exclusive aglomerados)",32,33,2,0,C 
+M0130,"Espécie da unidade visitada
+    01  - Domicílio particular permanente ocupado
+    05  - Domicílio particular improvisado ocupado
+    06  - Domicílio coletivo com morador",34,35,2,0,C 
+M0140,"Situação do domicílio
+    1  - Urbana
+    2  - Rural",36,36,1,0,C 
+M0150,"Ano de ocorrência do óbito de morador do domicílio, categoria
+    1 - 2019
+    2 - 2020
+    3 - 2021
+    4 - 2022
+    9 - Ignorado
+Branco",37,37,1,0,C 
+M0160,"Sexo da pessoa falecida do domicílio, categoria
+    1  - Masculino
+    2  - Feminino
+    9 - Ignorado",38,38,1,0,C 
+M0170,"Pessoa falecida, idade calculada, categoria
+    01 - 0 a 4 anos
+    02 - 5 a 9 anos
+    03 - 10 a 14 anos
+    04 - 15 a 19 anos
+    05 - 20 a 24 anos
+    06 - 25 a 29 anos
+    07 - 30 a 34 anos
+    08 - 35 a 39 anos
+    09 - 40 a 44 anos
+    10 - 45 a 49 anos
+    11 - 50 a 54 anos
+    12 - 55 a 59 anos
+    13 - 60 a 64 anos
+    14 - 65 a 69 anos
+    15 - 70 a 74 anos
+    16 - 75 a 79 anos
+    17 - 80 anos ou mais
+    99 - Idade ao falecer ignorada",39,40,2,0,C
+MM0150,"MARCA DE IMPUTAÇÃO NA M0150  
+0 - Não Imputado
+1 - Imputado",41,41,1,0,C
+MM0160,"MARCA DE IMPUTAÇÃO NA M0160  
+0 - Não Imputado
+1 - Imputado",42,42,1,0,C
+MM0170,"MARCA DE IMPUTAÇÃO NA M0170  
+0 - Não Imputado
+1 - Imputado",43,43,1,0,C

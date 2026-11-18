@@ -1,0 +1,272 @@
+Variáveis do Registro de Domicílios,,,,,,
+VAR,NOME,POSIÇÃO INICIAL,POSIÇÃO FINAL,INT,DEC,TIPO
+D0010,"Grande Região
+1- Região Norte (uf=11 a 17)
+2- Região Nordeste (uf=21 a 29)  
+3- Região Sudeste (uf=31 a 33 e 35)
+4- Região Sul (uf=41 a 43)
+5- Região Centro-oeste (uf=50 a 53)",1,1,1,0,C 
+D0020,"Unidade da Federação
+11- Rondônia
+12- Acre
+13- Amazonas
+14- Roraima
+15- Pará
+16- Amapá
+17- Tocantins
+21- Maranhão
+22- Piauí
+23- Ceará
+24- Rio Grande do Norte
+25- Paraíba
+26- Pernambuco
+27- Alagoas
+28- Sergipe
+29- Bahia
+31- Minas Gerais
+32- Espírito Santo
+33- Rio de Janeiro
+35- São Paulo
+41- Paraná
+42- Santa Catarina
+43- Rio Grande do Sul
+50- Mato Grosso do Sul
+51- Mato Grosso
+52- Goiás
+53- Distrito Federal",2,3,2,0,A 
+D0030,Mesorregião,4,7,4,0,A 
+D0040,Microrregião,8,12,5,0,A 
+D0050,Região Geográfica Intermediária,13,16,4,0,A 
+D0060,Região Geográfica Imediata,17,22,6,0,A 
+D0070,Concentração urbana,23,29,7,0,A 
+D0080,Município,30,36,7,0,A 
+D0090,Área de Ponderação,37,46,10,0,A 
+D0100,Controle ,47,54,8,0,N
+D0111,Peso Amostral (Versão acesso Controlado),55,70,3,13,N 
+D0120,"Situação do Setor
+    01  - Área urbana de alta densidade de edificações
+    02  - Área urbana de baixa densidade de edificações
+    03  - Núcleo urbano
+    05  - Povoado
+    06  - Núcleo rural
+    07  - Lugarejo
+    08  - Área rural (exclusive aglomerados)",71,72,2,0,C 
+D0130,"Espécie da unidade visitada
+    01  - Domicílio particular permanente ocupado
+    05  - Domicílio particular improvisado ocupado
+    06  - Domicílio coletivo com morador",73,74,2,0,C 
+D0140,"Situação do domicílio
+    1  - Urbana
+    2  - Rural",75,75,1,0,C 
+D0150,"Moradores do domicílio, número",76,78,3,0,N 
+D0160,"Crianças do domicílio, número",79,80,2,0,N 
+D0170,"Sexo do morador responsável pelo domicílio
+    1  - Masculino
+    2  - Feminino 
+    9 - Ignorado",81,81,1,0,C 
+D0171,"Sexo do morador responsável pelo domicílio
+    1  - Masculino
+    2  - Feminino",82,82,1,0,C 
+D0180,"Idade da pessoa responsável pelo domicílio, categoria
+    01 - 0 a 4 anos
+    02 - 5 a 9 anos
+    03 - 10 a 14 anos
+    04 - 15 a 19 anos
+    05 - 20 a 24 anos
+    06 - 25 a 29 anos
+    07 - 30 a 34 anos
+    08 - 35 a 39 anos
+    09 - 40 a 44 anos
+    10 - 45 a 49 anos
+    11 - 50 a 54 anos
+    12 - 55 a 59 anos
+    13 - 60 a 64 anos
+    14 - 65 a 69 anos
+    15 - 70 a 74 anos
+    16 - 75 a 79 anos
+    17 - 80 anos ou mais
+    99 - Ignorado",83,84,2,0,C
+D0181,Idade da pessoa responsável pelo domicílio,85,88,4,0,N 
+D0190,"Condição de ocupação do domicílio, categoria
+    1  - Próprio de algum morador Já pago, herdado ou ganho
+    2  - Próprio de algum morador Ainda pagando
+    3  - Alugado
+    4  - Cedido ou emprestado Por empregador
+    5  - Cedido ou emprestado Por familiar
+    6  - Cedido ou emprestado Outra forma
+    7  - Outra condição
+Branco",89,89,1,0,C 
+D0200,"Tipo de espécie
+11 - (Permanente ocupada) Casa
+12 - (Permanente ocupada) Casa de vila ou em condomínio
+13 - (Permanente ocupada) Apartamento
+14 - (Permanente ocupada) Habitação em casa de cômodos ou cortiço
+15 - (Permanente ocupada) Habitação indígena sem paredes ou maloca
+16 - (Permanente ocupada) Estrutura residencial permanente degradada ou inacabada
+51 - (Improvisado ocupada) Tenda ou barraca de lona, plástico ou Tecido ou estrutura improvisada em logradouro público
+52 - (Improvisado ocupada) Dentro de estabelecimento em Funcionamento
+53 - (Improvisado ocupada) Estrutura não residencial permanente degradada ou inacabada
+54 - (Improvisado ocupada) Outros (veículos, abrigos naturais e outras estruturas improvisadas)
+61 - (Coletivo com morador) Asilo ou outra instituição de longa permanência para idosos
+62 - (Coletivo com morador) Hotel ou pensão
+63 - (Coletivo com morador) Alojamento
+64 - (Coletivo com morador) Penitenciária, Centro de Detenção e similar
+65 - (Coletivo com morador) Abrigo, albergue, casa de passagem, Clínica psiquiátrica, comunidade terapêutica, orfanato e similares
+66 - (Coletivo com morador) Outro",90,91,2,0,C 
+D0210,"Material das paredes do domicílio, categoria
+    1  - Alvenaria ou taipa COM revestimento
+    2  - Alvenaria SEM revestimento
+    3  - Taipa sem revestimento
+    4  - Madeira para construção
+    5  - Madeira aproveitada de tapume, embalagens, andaimes
+    6  - Outro material
+    7  - Sem parede
+Branco",92,92,1,0,C 
+D0220,"Cômodos no domicílio, número",93,94,2,0,N 
+D0230,"Cômodos servindo de dormitório no domicílio, número",95,96,2,0,N 
+D0240,Número de moradores por cômodo utilizado como dormitório,97,100,2,2,N 
+D0250,"Tipo de esgotamento sanitário do domicílio
+1 - Rede geral ou pluvial
+2 - Fossa séptica ou fossa filtro Ligada à rede
+3 - Fossa séptica ou fossa filtro Não ligada à rede	
+4 - Fossa rudimentar ou buraco	
+5 - Vala
+6 - Rio, lago, córrego ou mar
+7 - Outra forma
+9 - Não tem banheiro nem sanitário
+Branco",101,101,1,0,C
+D0260,"Abastecimento de água do domicílio, categoria
+    1  - Rede geral de distribuição
+    2  - Poço  Profundo ou artesiano
+    3  - Poço  Raso, freático ou cacimba
+    4  - Fonte, nascente ou mina
+    5  - Carro-pipa
+    6  - Água da chuva armazenada
+    7  - Rios, açudes, córregos, lagos e igarapés
+    8  - Outra
+Branco",102,102,1,0,C 
+D0270,"Existência de banheiro ou sanitário e número de banheiros de uso exclusivo do domicílio
+1 - Tem banheiro de uso exclusivo do domicílio - 1 banheiro
+2 - Tem banheiro de uso exclusivo do domicílio - 2 banheiros
+3 - Tem banheiro de uso exclusivo do domicílio - 3 banheiros
+4 - Tem banheiro de uso exclusivo do domicílio - 4 banheiros ou mais
+5 - Apenas banheiro de uso comum a mais de um domicílio
+6 - Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno
+7 - Não tem banheiro nem sanitário
+Branco",103,103,1,0,C
+D0280,"Banheiros de uso exclusivo com chuveiro e vaso sanitário no domicílio, inclusive os localizados no terreno, número",104,104,1,0,N 
+D0290,"Acesso à rede geral de distribuição de água do domicílio, categoria
+    1  - Sim
+    2  - Não
+Branco",105,105,1,0,C 
+D0300,"Existência de água canalizada do domicílio, categoria
+    1  - Encanada até dentro da casa, apartamento ou habitação
+    2  - Encanada, mas apenas no terreno
+    3  - Não chega encanada
+Branco",106,106,1,0,C 
+D0310,"Destino do lixo do domicílio, categoria
+    1  - Coletado no domicílio por serviço de limpeza
+    2  - Depositado em caçamba de serviço de limpeza
+    3  - Queimado na propriedade
+    4  - Enterrado na propriedade
+    5  - Jogado em terreno baldio, encosta ou área pública
+    6  - Outro destino
+Branco",107,107,1,0,C 
+D0320,"Existência de máquina de lavar roupa no domicílio, categoria
+    1  - Sim
+    2  - Não
+Branco",108,108,1,0,C 
+D0330,"Acesso à internet, existência
+    1  - Sim
+    2  - Não
+Branco",109,109,1,0,C 
+D0340,"Ocorrência de óbito de morador do domicílio (de janeiro de 2019 a julho de 2022), categoria
+    1  - Sim
+    2  - Não
+    9 - Ignorado
+Branco",110,110,1,0,C 
+D0350,Rendimento domiciliar,111,119,9,0,N
+D0360,Rendimento domiciliar per capita,120,130,9,2,N
+D0370,Total de homens no domicílio,131,132,2,0,N 
+D0380,Total de mulheres no domicílio,133,134,2,0,N 
+D0390,Total de moradores com deficiência no domicílio,135,136,2,0,N 
+D0400,Total de moradores adultos com deficiência no domicílio,137,138,2,0,N 
+D0410,Total de moradores crianças com deficiência no domicílio,139,140,2,0,N 
+MD0130,"MARCA DE IMPUTAÇÃO NA D0130  
+0 - Não Imputado
+1 - Imputado",141,141,1,0,C
+MD0150,"MARCA DE IMPUTAÇÃO NA D0150  
+0 - Não Imputado
+1 - Imputado",142,142,1,0,C
+MD0160,"MARCA DE IMPUTAÇÃO NA D0160  
+0 - Não Imputado 
+1 - Imputado",143,143,1,0,C
+MD0170,"MARCA DE IMPUTAÇÃO NA D0170  
+0 - Não Imputado 
+1 - Imputado",144,144,1,0,C
+MD0180,"MARCA DE IMPUTAÇÃO NA D0180  
+0 - Não Imputado 
+1 - Imputado",145,145,1,0,C
+MD0190,"MARCA DE IMPUTAÇÃO NA D0190  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",146,146,1,0,C
+MD0200,"MARCA DE IMPUTAÇÃO NA D0200 
+ 0 - Não Imputado
+1 - Imputado",147,147,1,0,C
+MD0210,"MARCA DE IMPUTAÇÃO NA D0210  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",148,148,1,0,C
+MD0220,"MARCA DE IMPUTAÇÃO NA D0220 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",149,149,1,0,C
+MD0230,"MARCA DE IMPUTAÇÃO NA D0230  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",150,150,1,0,C
+MD0240,"MARCA DE IMPUTAÇÃO NA D0240  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",151,151,1,0,C
+MD0250,"MARCA DE IMPUTAÇÃO NA D0250  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",152,152,1,0,C
+MD0260,"MARCA DE IMPUTAÇÃO NA D0260  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",153,153,1,0,C
+MD0270,"MARCA DE IMPUTAÇÃO NA D0270  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",154,154,1,0,C
+MD0280,"MARCA DE IMPUTAÇÃO NA D0280  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",155,155,1,0,C
+MD0290,"MARCA DE IMPUTAÇÃO NA D0290  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",156,156,1,0,C
+MD0300,"MARCA DE IMPUTAÇÃO NA D0300  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",157,157,1,0,C
+MD0310,"MARCA DE IMPUTAÇÃO NA D0310  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",158,158,1,0,C
+MD0320,"MARCA DE IMPUTAÇÃO NA D0320  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",159,159,1,0,C
+MD0330,"MARCA DE IMPUTAÇÃO NA D0330  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",160,160,1,0,C
+MD0340,"MARCA DE IMPUTAÇÃO NA D0340  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",161,161,1,0,C

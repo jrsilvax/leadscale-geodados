@@ -1,0 +1,131 @@
+Variáveis do Registro de Família,,,,,,
+VAR,NOME,POSIÇÃO INICIAL,POSIÇÃO FINAL,INT,DEC,TIPO
+F0010,"Grande Região
+1- Região Norte (uf=11 a 17)
+2- Região Nordeste (uf=21 a 29)  
+3- Região Sudeste (uf=31 a 33 e 35)
+4- Região Sul (uf=41 a 43)
+5- Região Centro-oeste (uf=50 a 53)",1,1,1,0,C 
+F0020,"Unidade da Federação
+11- Rondônia
+12- Acre
+13- Amazonas
+14- Roraima
+15- Pará
+16- Amapá
+17- Tocantins
+21- Maranhão
+22- Piauí
+23- Ceará
+24- Rio Grande do Norte
+25- Paraíba
+26- Pernambuco
+27- Alagoas
+28- Sergipe
+29- Bahia
+31- Minas Gerais
+32- Espírito Santo
+33- Rio de Janeiro
+35- São Paulo
+41- Paraná
+42- Santa Catarina
+43- Rio Grande do Sul
+50- Mato Grosso do Sul
+51- Mato Grosso
+52- Goiás
+53- Distrito Federal",2,3,2,0,A 
+F0100,Controle ,4,11,8,0,N
+F0101,Número de ordem da Família,12,15,4,0,A
+F0110,Peso Amostral (Versão acesso  Público),16,31,3,13,N 
+F0120,"Situação do Setor
+    01  - Área urbana de alta densidade de edificações
+    02  - Área urbana de baixa densidade de edificações
+    03  - Núcleo urbano
+    05  - Povoado
+    06  - Núcleo rural
+    07  - Lugarejo
+    08  - Área rural (exclusive aglomerados)",32,33,2,0,C 
+F0130,"Espécie da unidade visitada
+    01  - Domicílio particular permanente ocupado
+    05  - Domicílio particular improvisado ocupado
+    06  - Domicílio coletivo com morador",34,35,2,0,C 
+F0140,"Situação do domicílio
+    1  - Urbana
+    2  - Rural",36,36,1,0,C 
+F0150,"Família, identificação
+    01  - Única
+    02  - Convivente - principal
+    03  - Convivente - segunda
+    04  - Convivente - terceira
+    05  - Convivente - quarta
+    06  - Convivente - quinta
+    07  - Convivente - sexta
+    08  - Convivente - sétima
+    09  - Convivente - oitava
+    10 - Convivente - nona",37,38,2,0,C 
+F0160,"Pessoas na família, número",39,40,2,0,N
+F0170,"Sexo do responsável pela família única ou convivente principal [Para as famílias conviventes secundárias a variável ficará em branco]
+    1 - Masculino
+    2 - Feminino",41,41,1,0,C 
+F0180,"Idade em anos do responsável pela família única ou convivente principal, categoria [Para as famílias conviventes secundárias a variável ficará em branco]
+    01 - 0 a 4 anos
+    02 - 5 a 9 anos
+    03 - 10 a 14 anos
+    04 - 15 a 19 anos
+    05 - 20 a 24 anos
+    06 - 25 a 29 anos
+    07 - 30 a 34 anos
+    08 - 35 a 39 anos
+    09 - 40 a 44 anos
+    10 - 45 a 49 anos
+    11 - 50 a 54 anos
+    12 - 55 a 59 anos
+    13 - 60 a 64 anos
+    14 - 65 a 69 anos
+    15 - 70 a 74 anos
+    16 - 75 a 79 anos
+    17 - 80 anos ou mais
+    99 - Ignorado",42,43,2,0,C 
+F0190,"Nível de instrução do responsável pela família única ou convivente principal [Para as famílias conviventes secundárias a variável ficará em branco]
+    1 - Sem instrução e fundamental incompleto
+    2 - Fundamental completo e médio incompleto
+    3 - Médio completo e superior incompleto
+    4 - Superior completo",44,44,1,0,C 
+F0200,"Cor ou raça do responsável pela família única ou convivente principal [Para as famílias conviventes secundárias a variável ficará em branco]
+    1 - Branca
+    2 - Preta
+    3 - Amarela
+    4 - Parda
+    5 - Indígena
+    9 - Ignorado",45,45,1,0,C 
+F0210,"Família únicas e conviventes principais, tipologia [Para as famílias conviventes secundárias a variável ficará em branco]
+    01  - Casal sem filhos
+    02  - Casal sem filhos e com parentes
+    03  - Casal com filhos
+    04  - Casal com filhos e com parentes
+    05  - Mulher sem cônjuge com filhos
+    06  - Mulher sem cônjuge com filhos e com parentes
+    07  - Homem sem cônjuge com filhos
+    08  - Homem sem cônjuge com filhos e com parentes
+    09  - Mulher ou homem com dois ou mais cônjuges
+    10 - Outro  ",46,47,2,0,C 
+F0220,"Famílias conviventes secundárias, tipologia [Para as famílias únicas ou conviventes principais a variável ficará em branco]
+    1 - Casal sem filhos
+    2 - Casal com filhos
+    3 - Mulher sem cônjuge com filhos
+    4 - Homem sem cônjuge com filhos",48,48,1,0,C 
+F0230,"Filhos menores de 10 anos ou não economicamente ativos das Famílias únicas e conviventes principais, número [Para as famílias conviventes secundárias a variável ficará em branco]",49,50,2,0,N
+F0240,"Integrantes da família, homens, número",51,52,2,0,N
+F0250,"Integrantes da família, mulheres, número",53,54,2,0,N
+F0260,Rendimento familiar per capita,55,65,9,2,N
+F0270,"Rendimento familiar, participação
+    1 - Ambos com rendimento
+    2 - Responsável com rendimento e cônjuge ou companheiro(a) sem rendimento
+    3 - Responsável sem rendimento e cônjuge ou companheiro(a) com rendimento
+    4 - Ambos sem rendimento",66,67,2,0,N
+MF0190,"MARCA DE IMPUTAÇÃO NA F019 
+0 - Não Imputado 
+1 - Imputado",68,68,1,0,C 
+MF0200,"MARCA DE IMPUTAÇÃO NA F0200 
+0 - Não Imputado 
+1 - Imputado",69,69,1,0,C 

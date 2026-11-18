@@ -1,0 +1,17 @@
+VARIÁVEL,DESCRIÇÃO
+CD_REGIAO,Código das Grandes Regiões (Regiões Geográficas)
+NM_REGIAO,Nome das Grandes Regiões (Regiões Geográficas)
+CD_UF,Código da Unidade da Federação
+NM_UF,Nome da Unidade da Federação
+CD_MUN,Código do Município
+NM_MUN,Nome do Município
+CD_DIST,Código do Distrito
+NM_DIST,Nome do Distrito
+CD_SUBDIS,Código do Subdistrito
+NM_SUBDIST,Nome do Subdistrito
+CD_RGINT,Código da Região Geográfica Intermediária
+NM_RGINT,Nome da Região Geográfica Intermediária
+CD_RGI,Código da Região Geográfica Imediata
+NM_RGI,Nome da Região Geográfica Imediata
+CD_CONCURB,Código da Concentração Urbana
+NM_CONCURB,Nome da Concentração Urbana

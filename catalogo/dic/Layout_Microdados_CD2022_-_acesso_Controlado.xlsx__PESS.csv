@@ -1,0 +1,1007 @@
+Variáveis do Registro de Pessoas,,,,,,
+VAR,NOME,POSIÇÃO INICIAL,POSIÇÃO FINAL,INT,DEC,TIPO
+P0010,"Grande Região
+1- Região Norte (uf=11 a 17)
+2- Região Nordeste (uf=21 a 29)  
+3- Região Sudeste (uf=31 a 33 e 35)
+4- Região Sul (uf=41 a 43)
+5- Região Centro-oeste (uf=50 a 53)",1,1,1,0,C 
+P0020,"Unidade da Federação
+11- Rondônia
+12- Acre
+13- Amazonas
+14- Roraima
+15- Pará
+16- Amapá
+17- Tocantins
+21- Maranhão
+22- Piauí
+23- Ceará
+24- Rio Grande do Norte
+25- Paraíba
+26- Pernambuco
+27- Alagoas
+28- Sergipe
+29- Bahia
+31- Minas Gerais
+32- Espírito Santo
+33- Rio de Janeiro
+35- São Paulo
+41- Paraná
+42- Santa Catarina
+43- Rio Grande do Sul
+50- Mato Grosso do Sul
+51- Mato Grosso
+52- Goiás
+53- Distrito Federal",2,3,2,0,A 
+P0030,Mesorregião,4,7,4,0,A 
+P0040,Microrregião,8,12,5,0,A 
+P0050,Região Geográfica Intermediária,13,16,4,0,A 
+P0060,Região Geográfica Imediata,17,22,6,0,A 
+P0070,Concentração urbana,23,29,7,0,A
+P0080,Município,30,36,7,0,A 
+P0090,Área de Ponderação,37,46,10,0,A 
+P0100,Controle ,47,54,8,0,N
+P0101,Número de ordem do morador,55,56,2,0,N 
+P0111,Peso Amostral (Versão acesso Controlado),57,72,3,13,N 
+P0115,Número de ordem da Família,73,76,4,0,A
+P0120,"Situação do Setor
+    01  - Área urbana de alta densidade de edificações
+    02  - Área urbana de baixa densidade de edificações
+    03  - Núcleo urbano
+    05  - Povoado
+    06  - Núcleo rural
+    07  - Lugarejo
+    08  - Área rural (exclusive aglomerados)",77,78,2,0,C 
+P0130,"Espécie da unidade visitada
+    01  - Domicílio particular permanente ocupado
+    05  - Domicílio particular improvisado ocupado
+    06  - Domicílio coletivo com morador",79,80,2,0,C 
+P0140,"Situação do domicílio
+    1  - Urbana
+    2  - Rural",81,81,1,0,C 
+P0150,"Sexo
+    1  - Masculino
+    2  - Feminino
+    9 - Ignorado",82,82,1,0,C 
+P0160,"Sexo
+    1  - Masculino
+    2  - Feminino",83,83,1,0,C 
+P0170,"Condição no domicílio da pessoa, categoria
+    01  - Pessoa responsável pelo domicílio
+    02  - Cônjuge ou companheiro(a) de sexo diferente
+    03  - Cônjuge ou companheiro(a) do mesmo sexo
+    04  - Filho(a) do responsável e do cônjuge
+    05  - Filho(a) somente do responsável
+    06  - Enteado(a)
+    07  - Genro ou nora
+    08  - Pai, mãe, padrasto ou madrasta
+    09  - Sogro(a)
+    10  - Neto(a)
+    11  - Bisneto(a)
+    12  - Irmão ou irmã
+    13  - Avô ou avó
+    14  - Outro parente
+    15  - Agregado(a)
+    16  - Convivente
+    17  - Pensionista
+    18  - Empregado(a) doméstico(a)
+    19  - Parente do(a) empregado(a)  doméstico(a)
+    20  - Individual em domicílio coletivo",84,85,2,0,C 
+P0180,"Idade calculada em anos da pessoa, categoria
+    01 - 0 a 4 anos
+    02 - 5 a 9 anos
+    03 - 10 a 14 anos
+    04 - 15 a 19 anos
+    05 - 20 a 24 anos
+    06 - 25 a 29 anos
+    07 - 30 a 34 anos
+    08 - 35 a 39 anos
+    09 - 40 a 44 anos
+    10 - 45 a 49 anos
+    11 - 50 a 54 anos
+    12 - 55 a 59 anos
+    13 - 60 a 64 anos
+    14 - 65 a 69 anos
+    15 - 70 a 74 anos
+    16 - 75 a 79 anos
+    17 - 80 anos ou mais
+    99 - Ignorado",86,87,2,0,C
+P0181,"Idade calculada em anos da pessoa, número",88,90,3,0,N 
+P0190,"Idade calculada em meses da pessoa, número",91,93,3,0,N 
+P0200,"Forma de declaração de idade 
+1 - Data de nascimento
+2 - Idade declarada",94,94,1,0,C
+P0210,"Cor ou raça da pessoa, categoria
+    1  - Branca
+    2  - Preta
+    3  - Amarela
+    4  - Parda
+    5  - Indígena
+    9 - Ignorado",95,95,1,0,C 
+P0220,"Pessoa Indígena, categoria
+    1 - Sim
+    0 - Não
+    9 - Ignorado",96,96,1,0,C
+P0230,"Uso da língua portuguesa no domicílio da pessoa, categoria.
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",97,97,1,0,C 
+P0240,"Status de declaração de etnia
+1 - Declarou uma etnia
+2 - Declarou duas etnias
+3 - Declaração não-determinada
+4 - Declaração mal definida
+5 - Não sabe
+6 - Não declarou
+Branco",98,98,1,0,C 
+P0250,"Status de declaração de língua indígena
+1 - Declarou uma língua indígena
+2 - Declarou duas línguas indígenas
+3 - Declarou três línguas indígenas
+4 - Declaração não-determinada
+5 - Declaração mal definida
+6 - Não sabe
+7 - Não fala língua indígena no domicílio
+Branco",99,99,1,0,C
+P0260,"Pessoa quilombola, categoria
+    1  - Sim
+    2  - Não",100,100,1,0,C 
+P0270,"Existência e tipo de registro de nascimento da pessoa, categoria
+    1  - Do cartório
+    2  - Registro Administrativo de Nascimento Indígena (RANI)
+    3  - Não tem
+    4  - Não sabe
+    9  - Ignorado
+Branco",101,101,1,0,C 
+P0280,"Convivência com cônjuge ou companheiro da pessoa, categoria
+    1  - Sim
+    2  - Não Já viveu antes
+    3  - Não Nunca viveu
+Branco",102,102,1,0,C 
+P0290,"Natureza da união, categoria
+    1  - Casamento civil e religioso
+    2  - Só casamento civil
+    3  - Só casamento religioso
+    4  - União consensual
+Branco",103,103,1,0,C 
+P0300,"Moradia da mãe ou madrasta no domicílio da pessoa, categoria
+    1  - Sim
+    2  - Não",104,104,1,0,C 
+P0310,"Moradia do pai ou padrasto no domicílio da pessoa, categoria
+    1  - Sim
+    2  - Não",105,105,1,0,C 
+P0320,"Filhos homens nascidos vivos da pessoa, número",106,107,2,0,N 
+P0330,"Filhas mulheres nascidas vivas da pessoa, número",108,109,2,0,N 
+P0340,"Filhos nascidos vivos da pessoa, número",110,111,2,0,N 
+P0350,"Filhos homens vivos da pessoa, número",112,113,2,0,N 
+P0360,"Filhas mulheres vivas da pessoa, número",114,115,2,0,N 
+P0370,"Filhos vivos da pessoa, número",116,117,2,0,N 
+P0380,"Idade calculada do último filho nascido vivo da pessoa, categoria
+    01 - 0 a 4 anos
+    02 - 5 a 9 anos
+    03 - 10 a 14 anos
+    04 - 15 a 19 anos
+    05 - 20 a 24 anos
+    06 - 25 a 29 anos
+    07 - 30 a 34 anos
+    08 - 35 a 39 anos
+    09 - 40 a 44 anos
+    10 - 45 a 49 anos
+    11 - 50 a 54 anos
+    12 - 55 a 59 anos
+    13 - 60 a 64 anos
+    14 - 65 a 69 anos
+    15 - 70 a 74 anos
+    16 - 75 a 79 anos
+    17 - 80 anos ou mais
+    99 - Ignorado",118,119,2,0,C
+P0381,"Idade calculada do último filho nascido vivo da pessoa, número",120,122,3,0,N 
+P0390,"Forma de declaração de idade do último filho tido nascido vivo
+1 - Data de nascimento
+2 - Idade declarada
+Branco",123,123,1,0,C
+P0400,"Existência de filho nascido vivo no período de 12 meses, categoria
+    1  - Sim
+    2  - Não
+Branco",124,124,1,0,C 
+P0410,"Religião ou culto, categoria
+    1 - Católica Apostólica Romana
+    2 - Evangélicas
+    3 - Espírita
+    4 - Umbanda e Candomblé
+    5 - Tradições indígenas
+    6 - Outras religiosidades
+    7 - Sem religião    
+    8 - Não sabe
+    9 - Sem declaração",125,125,1,0,A 
+P0411,"Religião ou culto, categoria
+    1 - Católica Apostólica Romana
+    2 - Católica Apostólica Brasileira
+    3 - Católica Ortodoxa
+    4 - Evangélicas de Missão
+    5 - Evangélicas de origem pentecostal
+    6 - Igrejas evangélicas indígenas
+    7 - Evangélica não determinada
+    8 - Outras religiosidades cristãs
+    9 - Igreja de Jesus Cristo dos Santos dos Últimos Dias
+    10 - Testemunhas de Jeová
+    11 - Espiritualista
+    12 - Espírita
+    13 - Umbanda
+    14 - Candomblé
+    15 - Outras declarações de religiosidades afrobrasileira
+    16 - Judaísmo
+    17 - Hinduísmo
+    18 - Budismo
+    19 - Igreja Messiânica Mundial
+    20 - Outras novas religiões orientais
+    21 - Outras religiões orientais
+    22 - Islamismo
+    23 - Tradições esotéricas
+    24 - Tradições indígenas
+    25 - Religiões Ayahuasqueiras
+    26 - LBV
+    27 - Sem religião - Sem religião
+    28 - Sem religião - Ateu
+    29 - Sem religião - Agnóstico
+    30 - Múltiplo pertencimento
+    31 - Não determinada
+    32 - Não sabe
+    33 - Sem declaração",126,127,2,0,A 
+P0420,"Existência de deficiência visual da pessoa, categoria
+    1  - Tem, não consegue de modo algum
+    2  - Tem muita dificuldade
+    3  - Tem alguma dificuldade
+    4  - Não tem dificuldade
+    9  - Ignorado
+Branco",128,128,1,0,C 
+P0430,"Existência de deficiência auditiva da pessoa, categoria
+    1  - Tem, não consegue de modo algum
+    2  - Tem muita dificuldade
+    3  - Tem alguma dificuldade
+    4  - Não tem dificuldade
+    9  - Ignorado
+Branco",129,129,1,0,C 
+P0440,"Existência de deficiência motora da pessoa, categoria
+    1  - Tem, não consegue de modo algum
+    2  - Tem muita dificuldade
+    3  - Tem alguma dificuldade
+    4  - Não tem dificuldade
+    9  - Ignorado
+Branco",130,130,1,0,C 
+P0450,"Existência de dificuldade em pegar objetos da pessoa, categoria
+    1  - Tem, não consegue de modo algum
+    2  - Tem muita dificuldade
+    3  - Tem alguma dificuldade
+    4  - Não tem dificuldade
+    9  - Ignorado
+Branco",131,131,1,0,C 
+P0460,"Existência de deficiência mental ou intelectual da pessoa, categoria
+    1  - Tem, não consegue de modo algum
+    2  - Tem muita dificuldade
+    3  - Tem alguma dificuldade
+    4  - Não tem dificuldade
+    9  - Ignorado
+Branco",132,132,1,0,C 
+P0470,"Variável indicadora da Existência de Deficiência
+    1 - Pessoa COM Deficiência
+    2 - Pessoa SEM Deficiência
+    9 - Não aplicável - Pessoa com menos de 2 anos de idade",133,133,1,0,C 
+P0480,"Local de nascimento da pessoa, categoria
+    1  - Neste município
+    2  - Em outro município do Brasil
+    3  - Em outro país
+    9  - Ignorado
+Branco",134,134,1,0,C 
+P0490,"Unidade da Federação de nascimento da pessoa, código",135,136,2,0,A 
+P0500,"Município de nascimento da pessoa, código",137,143,7,0,A 
+P0510,"País de nascimento da pessoa, código",144,153,10,0,A 
+P0520,"Nacionalidade da pessoa, categoria
+    1  - Brasileiro nato
+    2  - Naturalizado brasileiro
+    3  - Estrangeiro
+Branco",154,154,1,0,C 
+P0530,"Moradia em outro município ou país estrangeiro da pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",155,155,1,0,C 
+P0540,"Ano de fixação de residência da pessoa, número",156,159,4,0,N 
+P0550,"Tempo de moradia no município da pessoa, número",160,161,2,0,N 
+P0560,"Unidade da Federação e município ou país estrangeiro de moradia anterior da pessoa, categoria
+    1  - Estado/Município
+    2  - País estrangeiro
+    9  - Ignorado
+Branco",162,162,1,0,C 
+P0570,"Unidade da Federação de moradia anterior da pessoa, código",163,164,2,0,A 
+P0580,"Município de moradia anterior da pessoa, código",165,171,7,0,A 
+P0590,"País estrangeiro de moradia anterior da pessoa, código",172,181,10,0,A 
+P0600,"Unidade da Federação e município ou país estrangeiro de moradia há 5 anos da pessoa, categoria
+    1  - Neste município
+    2  - Outro município do Brasil
+    3  - Outro país
+    9  - Ignorado
+Branco",182,182,1,0,C 
+P0610,"Unidade da Federação de moradia há 5 anos da pessoa, código",183,184,2,0,A 
+P0620,"Município de moradia da pessoa há 5 anos, código",185,191,7,0,A 
+P0630,"País de moradia há 5 anos da pessoa, código",192,201,10,0,A 
+P0640,"Alfabetização da pessoa, categoria
+    1  - Sim
+    2  - Não
+Branco",202,202,1,0,C 
+P0650,"Frequência escolar da pessoa, categoria
+    1  - Sim
+    2  - Não Mas já frequentou
+    3  - Não Nunca frequentou
+Branco",203,203,1,0,C 
+P0660,"Curso frequentado pela pessoa, categoria
+    01  - Creche 
+    02  - Pré escola 
+    03  - Alfabetização de jovens e adultos 
+    04  - Regular do ensino fundamental 
+    05  - Educação de jovens e adultos (EJA) do ensino fundamental 
+    06  - Regular do ensino médio 
+    07  - Educação de jovens e adultos (EJA) do ensino médio 
+    08  - Superior de graduação 
+    09  - Especialização de nível superior (duração mínima de 360 horas) 
+    10  - Mestrado 
+    11  - Doutorado 
+    99  - Ignorado
+Branco",204,205,2,0,C 
+P0670,"Ano do curso frequentado pela pessoa, categoria
+    01  - Primeiro
+    02  - Segundo
+    03  - Terceiro
+    04  - Quarto
+    05  - Quinto
+    06  - Sexto
+    07  - Sétimo 
+    08  - Oitavo 
+    09  - Nono 
+    10  - Curso não classificado em anos 
+    99  - Ignorado
+Branco",206,207,2,0,C 
+P0680,"Série do curso frequentado pela pessoa, categoria
+    01  - Primeira
+    02  - Segunda
+    03  - Terceira
+    04  - Quarta 
+    05  - Quinta 
+    06  - Sexta 
+    07  - Sétima 
+    08  - Oitava 
+    09  - Nona 
+    10  - Curso não classificado em séries
+    99  - Ignorado
+Branco",208,209,2,0,C 
+P0690,"Conclusão de outro curso superior de graduação da pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",210,210,1,0,C 
+P0700,"Curso mais elevado frequentado anteriormente da pessoa, categoria
+    01  - Creche
+    02  - Pré escola
+    03  - Classe de alfabetização
+    04  - Alfabetização de jovens e adultos 
+    05  - Antigo primário (elementar) 
+    06  - Antigo ginasial (médio 1º ciclo) 
+    07  - Regular do ensino fundamental ou do 1º grau
+    08  - Educação de jovens e adultos (EJA) do ensino fundamental ou supletivo do 1º grau 
+    09  - Antigo científico, clássico, etc. (médio 2º ciclo) 
+    10  - Regular do ensino médio ou do 2º grau 
+    11  - Educação de jovens e adultos (EJA) do ensino médio ou supletivo do 2º grau 
+    12  - Superior de graduação 
+    13  - Especialização de nível superior (duração mínima de 360 horas) 
+    14  - Mestrado 
+    15  - Doutorado 
+    99  - Ignorado
+Branco",211,212,2,0,C 
+P0710,"Duração do curso frequentado anteriormente da pessoa, categoria
+    1  - 8 séries
+    2  - 9 anos
+    9  - Ignorado
+Branco",213,213,1,0,C 
+P0720,"Último ano concluído com aprovação no curso frequentado anteriormente da pessoa, categoria
+    01  - Nenhum
+    02  - Primeiro 
+    03  - Segundo
+    04  - Terceiro
+    05  - Quarto
+    06  - Quinto
+    07  - Sexto
+    08  - Sétimo 
+    09  - Oitavo 
+    10  - Nono 
+    11  - Curso não era classificado em anos 
+    99  - Ignorado
+Branco",214,215,2,0,C 
+P0730,"Última série concluída com aprovação no curso frequentado anteriormente da pessoa, categoria
+    01  - Nenhuma
+    02  - Primeira
+    03  - Segunda
+    04  - Terceira
+    05  - Quarta 
+    06  - Quinta 
+    07  - Sexta 
+    08  - Sétima 
+    09  - Oitava 
+    10  - Nona 
+    11  - Curso não classificado em séries 
+    99  - Ignorado
+Branco",216,217,2,0,C 
+P0740,"Conclusão de curso frequentado anteriormente pela pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",218,218,1,0,C 
+P0750,Área detalhada do curso superior de graduação cursado pela pessoa,219,222,4,0,A 
+P0760,"Morador, nível de instrução de ensino
+    1 - Sem instrução e menos de 1 ano
+    2 - Ensino fundamental incompleto ou equivalente
+    3 - Ensino fundamental completo ou equivalente
+    4 - Ensino médio incompleto ou equivalente
+    5 - Ensino médio completo ou equivalente
+    6 - Superior incompleto ou equivalente
+    7 - Superior completo
+    8 - Não determinado
+    9 - Ignorado ""se frequenta curso""
+    901 - Ignorado ""curso que frequenta""
+    902 - Ignorado ""ano/serie que frequenta
+    903 - Ignorado ""se concluiu outro curso de graduação""
+    911 - Ignorado ""curso que frequentou""
+    912 - Ignorado ""se concluiu o curso que frequentou""
+    913 - Ignorado ""ano/série que frequentou""
+    914 - Ignorado ""duração do curso regular de Ensino Fundamental""",223,225,3,0,C
+P0770,"Morador, nível de instrução de ensino, compatível com o Censo Demográfico de 2010
+    1 - Sem instrução e fundamental incompleto
+    2 - Fundamental completo e médio incompleto
+    3 - Médio completo e superior incompleto
+    4 - Superior completo
+    5 - Não determinado",226,226,1,0,C
+P0780,"Variável indicadora de frequência escolar em nível adequado à idade
+    1 - Adequado
+    2 - Não adequado
+    9 - Não aplicável - Pessoa com menos de 6 anos ou maior que 24 anos de idade",227,227,1,0,C 
+P0790,Anos de estudo da pessoa,228,230,3,0,N 
+P0800,"Unidade da Federação e município ou país estrangeiro da escola da pessoa, categoria
+    1  - Neste município
+    2  - Em outro município do Brasil
+    3  - Em outro país
+    9  - Ignorado
+Branco",231,231,1,0,C 
+P0810,"Unidade da Federação do local de estudo da pessoa, categoria",232,233,2,0,A 
+P0820,"Município do local de estudo da pessoa, categoria",234,240,7,0,A 
+P0830,"País estrangeiro do local de estudo da pessoa, categoria",241,250,10,0,A 
+P0840,"Existência de trabalho remunerado em dinheiro da pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",251,251,1,0,C 
+P0850,"Existência de trabalho remunerado em produtos, mercadorias ou benefícios da pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",252,252,1,0,C 
+P0860,"Existência de bico ou atividade ocasional remunerada da pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",253,253,1,0,C 
+P0870,"Existência de trabalho não remunerado como ajuda na atividade remunerada de morador do domicílio da pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",254,254,1,0,C 
+P0880,"Existência de afastamento temporário do trabalho remunerado da pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",255,255,1,0,C 
+P0890,"Existência de trabalho na plantação, criação de animais ou pesca, para alimentação dos moradores do domicílio, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",256,256,1,0,C 
+P0900,"Trabalhos da pessoa, categoria
+    1  - Um
+    2  - Dois
+    3  - Três ou mais
+    9  - Ignorado
+Branco",257,257,1,0,C 
+P0910,"Pessoa de 10 anos ou mais de idade, categoria
+    0 - Pessoa de menos de 10 anos de idade
+    1 - Pessoa de 10 anos ou mais de idade
+Branco",258,258,1,0,C 
+P0920,"Pessoa de 14 anos ou mais de idade, categoria
+    0 - Pessoa de menos de 14 anos de idade
+    1 - Pessoa de 14 anos ou mais de idade
+Branco",259,259,1,0,C 
+P0930,"Pessoa de 14 anos ou mais de idade na força de trabalho, categoria
+    0 - Pessoa de 14 anos ou mais de idade FORA da força de trabalho
+    1 - Pessoa de 14 anos ou mais de idade na força de trabalho
+Branco",260,260,1,0,C 
+P0940,"Pessoa de 14 anos ou mais, ocupada, contribuinte de instituto de previdência no trabalho principal, catogoria
+    0 - Pessoa de 14 anos ou mais de idade ocupada NÃO contribuinte de instituto de previdência no trabalho principal
+    1 - Pessoa de 14 anos ou mais de idade ocupada contribuinte de instituto de previdência no trabalho principal
+Branco",261,261,1,0,C 
+P0950,"Pessoas de 14 anos ou mais ocupada, categoria
+    0 - Desocupada
+    1 - Ocupada
+Branco",262,262,1,0,C
+P0960,"Pessoas de 10 anos ou mais ocupada, categoria
+    0 - Não ocupada
+    1 - Ocupada
+Branco",263,263,1,0,C
+P0970,"Ocupação – código:
+- A relação de códigos encontra-se no arquivo: “Codificação_Ocupação CD2022.xls”",264,267,4,0,A 
+P0980,"Atividade – código
+- A relação de códigos encontra-se no arquivo: “Codificação_Atividade CD2022.xls”",268,272,5,0,A 
+P0990,"Posição na ocupação do trabalho principal da pessoa, categoria
+    01  - Trabalhador doméstico (inclusive diarista)
+    02  - Militar do exército, da marinha, da aeronáutica, da polícia militar ou do corpo de bombeiros militar 
+    03  - Empregado do setor privado
+    04  - Empregado do setor público _ funcionário estatutário 
+    05  - Empregado do setor público _ empregado não estatutário 
+    06  - Empregado de empresas estatais
+    07  - Empregador (com pelo menos um empregado)
+    08  - Conta própria (sem empregados)
+    09  - Trabalhador não remunerado em ajuda a morador do domicílio ou parente
+    99  - Ignorado
+Branco",273,274,2,0,C 
+P1000,"Existência de carteira de trabalho assinada no trabalho principal da pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",275,275,1,0,C 
+P1010,"Existência de registro no CNPJ do negócio ou empresa da pessoa, categoria
+    1  - Sim
+    2  - Não",276,276,1,0,C 
+P1020,"Posição na ocupação no trabalho principal, semana de referência, pessoas de 10 anos ou mais
+    01 - Empregado no setor privado COM carteira de trabalho assinada
+    02 - Empregado no setor privado SEM carteira de trabalho assinada
+    03 - Trabalhador doméstico COM carteira de trabalho assinada
+    04 - Trabalhador doméstico SEM carteira de trabalho assinada
+    05 -  Empregado no setor público COM carteira de trabalho assinada
+    06 -  Empregado no setor público SEM carteira de trabalho assinada
+    07 - Militar e servidor estatutário
+    08 - Empregador
+    09 - Conta própria
+    10 - Trabalhador familiar auxiliar",277,278,2,0,C 
+P1030,"Atividade principal, no trabalho principal, semana de referência, pessoas de 10 anos ou mais
+    01 - Agricultura, pecuária, produção florestal, pesca e aquicultura
+    02 - Indústrias extrativas
+    03 - Indústrias de transformação
+    04 - Eletricidade e gás
+    05 - Água, esgoto, atividades de gestão de resíduos e descontaminação
+    06 - Construção
+    07 - Comércio, reparação de veículos automotores e motocicletas
+    08 - Transporte, armazenagem e correio
+    09 - Alojamento e alimentação 
+    10 - Informação e comunicação
+    11 - Atividades financeiras, de seguros e serviços relacionados
+    12 - Atividades imobiliárias
+    13 - Atividades profissionais, científicas e técnicas
+    14 - Atividades administrativas e serviços complementares
+    15 - Administração pública, defesa e seguridade social
+    16 - Educação
+    17 - Saúde humana e serviços sociais
+    18 - Artes, cultura, esporte e recreação
+    19 - Outras atividades de serviços
+    20 - Serviços domésticos
+    21 - Organismos internacionais e outras instituições extraterritoriais
+    22 - Atividades mal definidas ou não especificadas (biscate)
+Branco",279,280,2,0,C 
+P1040,"Grandes Grupos Ocupacionais, trabalho principal, semana de referência, pessoas de 10 anos ou mais
+    01 - Diretores e gerentes
+    02 - Profissionais das ciências e intelectuais
+    03 - Técnicos e profissionais de nível médio
+    04 - Trabalhadores de apoio administrativo
+    05 - Trabalhadores dos serviços, vendedores dos comércios e mercados
+    06 - Trabalhadores qualificados da agropecuária, florestais, da caça e da pesca
+    07 - Trabalhadores qualificados, operários e artesões da construção, das artes mecânicas e outros ofícios
+    08 - Operadores de instalações e máquinas e montadores
+    09 - Ocupações elementares
+    10 - Membros das forças armadas, policiais e bombeiros militares
+    11 - Ocupações maldefinidas",281,282,2,0,C 
+P1050,"Existência de providência para conseguir trabalho no período de 30 dias da pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado",283,283,1,0,C 
+P1060,"Disponibilidade para começar a trabalhar da pessoa, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",284,284,1,0,C 
+P1070,"Tipo de rendimento bruto mensal habitualmente recebido em todos os trabalhos para pessoas de 10 anos ou mais
+    1  - Valor em dinheiro, produtos ou mercadorias
+    2  - Outra forma (Moradia, Alimentação, Treinamento, etc.)",285,285,1,0,C 
+P1080,Valor do Rendimento bruto mensal habitual de todos os trabalhos para pessoas de 10 anos ou mais,286,294,9,0,N 
+P1090,"Existência de rendimento bruto mensal, Aposentadoria/Pensão/Bolsa Família/BPC/Aluguel, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado",295,295,1,0,C 
+P1100,"Rendimento bruto mensal, Aposentadoria/Pensão/Bolsa Família/BPC/Aluguel, Valor",296,302,7,0,N 
+P1110,Rendimento recebido em todas as fontes,303,311,9,0,N 
+P1120,"Unidade da Federação e município ou país estrangeiro do local de trabalho da pessoa, categoria
+    1  - Em casa ou na propriedade
+    2  - Fora de casa e da propriedade
+    3  - Em outro município do Brasil
+    4  - Em outro país
+    5  - Em mais de um município ou país
+    9  - Ignorado
+Branco",312,312,1,0,C 
+P1130,"Unidade da Federação do local de trabalho da pessoa, código",313,314,2,0,A 
+P1140,"Município do local de trabalho da pessoa, código",315,321,7,0,A 
+P1150,"País estrangeiro do local de trabalho da pessoa, categoria",322,331,10,0,A 
+P1160,"Retorna do trabalho para casa 3 dias ou mais na semana, categoria
+    1  - Sim
+    2  - Não
+    9  - Ignorado
+Branco",332,332,1,0,C 
+P1170,"Meios de transporte de deslocamento para o local de trabalho da pessoa, categoria
+    01  - A pé
+    02  - Bicicleta
+    03  - Motocicleta
+    04  - Mototáxi
+    05  - Automóvel
+    06  - Táxi ou assemelhados
+    07  - Van, perua ou assemelhados
+    08  - Ônibus
+    09  - BRT ou ônibus de trânsito rápido
+    10  - Trem ou metrô
+    11  - Caminhonete ou caminhão adaptado (pau de arara)
+    12  - Embarcação de médio e grande porte (acima de 20 pessoas)
+    13  - Embarcação de pequeno porte (até 20 pessoas)
+    14  - Outros
+    99 - Ignorado",333,334,2,0,C 
+P1180,"Tempo em que a pessoa leva entre sua casa e o local de trabalho normalmente, categoria
+    0 - Não se desloca para local de trabalho
+    1 - Até cinco minutos
+    2 - De seis minutos até quinze minutos
+    3 - Mais de quinze minutos até meia hora
+    4 - Mais de meia hora até uma hora
+    5 - Mais de uma hora até duas horas
+    6 - Mais de duas horas até quatro horas
+    7 - Mais de quatro horas
+    9 - Tempo não informado (ignorado)",335,335,1,0,C 
+P1190,"Tempo do deslocamento para trabalho, calculado em minutos",336,339,4,0,N 
+P1200,"Existência de diagnóstico de autismo por profissional de saúde
+    1  - Sim
+    2  - Não
+Branco",340,340,1,0,C 
+P1210,"Quem prestou as informações da pessoa, categoria
+    1  - A própria pessoa
+    2  - Outro morador
+    3  - Não morador
+    9 - Ignorado
+Branco",341,341,1,0,C 
+P1220,"Número de ordem de quem prestou as informações da pessoa, código",342,345,4,0,A 
+MP0150,"MARCA DE IMPUTAÇÃO NA P0150  
+0 - Não Imputado
+1 - Imputado",346,346,1,0,C
+MP0170,"MARCA DE IMPUTAÇÃO NA P0170  
+0 - Não Imputado
+1 - Imputado",347,347,1,0,C
+MP0180,"MARCA DE IMPUTAÇÃO NA P0180  
+0 - Não Imputado
+1 - Imputado",348,348,1,0,C
+MP0181,"MARCA DE IMPUTAÇÃO NA P0181  
+0 - Não Imputado
+1 - Imputado",349,349,1,0,C
+MP0190,"MARCA DE IMPUTAÇÃO NA P0190  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",350,350,1,0,C
+MP0210,"MARCA DE IMPUTAÇÃO NA P0210  
+0 - Não Imputado
+1 - Imputado",351,351,1,0,C
+MP0230,"MARCA DE IMPUTAÇÃO NA P0230  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",352,352,1,0,C
+MP0260,"MARCA DE IMPUTAÇÃO NA P0260  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",353,353,1,0,C
+MP0270,"MARCA DE IMPUTAÇÃO NA P0270  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",354,354,1,0,C
+MP0280,"MARCA DE IMPUTAÇÃO NA P0280  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",355,355,1,0,C
+MP0290,"MARCA DE IMPUTAÇÃO NA P0290 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",356,356,1,0,C
+MP0300,"MARCA DE IMPUTAÇÃO NA P0300 
+ 0 - Não Imputado
+1 - Imputado",357,357,1,0,C
+MP0310,"MARCA DE IMPUTAÇÃO NA P0310 
+ 0 - Não Imputado
+1 - Imputado",358,358,1,0,C
+MP0320,"MARCA DE IMPUTAÇÃO NA P0320 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",359,359,1,0,C
+MP0330,"MARCA DE IMPUTAÇÃO NA P0330 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",360,360,1,0,C
+MP0350,"MARCA DE IMPUTAÇÃO NA P0350 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",361,361,1,0,C
+MP0360,"MARCA DE IMPUTAÇÃO NA P0360 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",362,362,1,0,C
+MP0410,"MARCA DE IMPUTAÇÃO NA P0410  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",363,363,1,0,C
+MP0411,"MARCA DE IMPUTAÇÃO NA P0411  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",364,364,1,0,C
+MP0420,"MARCA DE IMPUTAÇÃO NA P0420  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",365,365,1,0,C
+MP0430,"MARCA DE IMPUTAÇÃO NA P0430  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",366,366,1,0,C
+MP0440,"MARCA DE IMPUTAÇÃO NA P0440  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",367,367,1,0,C
+MP0450,"MARCA DE IMPUTAÇÃO NA P0450  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",368,368,1,0,C
+MP0460,"MARCA DE IMPUTAÇÃO NA P0460  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",369,369,1,0,C
+MP0480,"MARCA DE IMPUTAÇÃO NA P0480  
+0 - Não Imputado
+1 - Imputado",370,370,1,0,C
+MP0490,"MARCA DE IMPUTAÇÃO NA P0490  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",371,371,1,0,C
+MP0500,"MARCA DE IMPUTAÇÃO NA P0500  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",372,372,1,0,C
+MP0510,"MARCA DE IMPUTAÇÃO NA P0510  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",373,373,1,0,C
+MP0520,"MARCA DE IMPUTAÇÃO NA P0520  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",374,374,1,0,C
+MP0530,"MARCA DE IMPUTAÇÃO NA P0530  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",375,375,1,0,C
+MP0540,"MARCA DE IMPUTAÇÃO NA P0540  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",376,376,1,0,C
+MP0550,"MARCA DE IMPUTAÇÃO NA P0550  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",377,377,1,0,C
+MP0560,"MARCA DE IMPUTAÇÃO NA P0560 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",378,378,1,0,C
+MP0570,"MARCA DE IMPUTAÇÃO NA P0570  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",379,379,1,0,C
+MP0580,"MARCA DE IMPUTAÇÃO NA P0580 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",380,380,1,0,C
+MP0590,"MARCA DE IMPUTAÇÃO NA P0590  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",381,381,1,0,C
+MP0600,"MARCA DE IMPUTAÇÃO NA P0600  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",382,382,1,0,C
+MP0610,"MARCA DE IMPUTAÇÃO NA P0610 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",383,383,1,0,C
+MP0620,"MARCA DE IMPUTAÇÃO NA P0620  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",384,384,1,0,C
+MP0630,"MARCA DE IMPUTAÇÃO NA P0630  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",385,385,1,0,C
+MP0640,"MARCA DE IMPUTAÇÃO NA P0640 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",386,386,1,0,C
+MP0650,"MARCA DE IMPUTAÇÃO NA P0650  
+0 - Não Imputado
+1 - Imputado",387,387,1,0,C
+MP0660,"MARCA DE IMPUTAÇÃO NA P0660  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",388,388,1,0,C
+MP0670,"MARCA DE IMPUTAÇÃO NA P0670  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",389,389,1,0,C
+MP0680,"MARCA DE IMPUTAÇÃO NA P0680  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",390,390,1,0,C
+MP0690,"MARCA DE IMPUTAÇÃO NA P0690  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",391,391,1,0,C
+MP0700,"MARCA DE IMPUTAÇÃO NA P0700  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",392,392,1,0,C
+MP0710,"MARCA DE IMPUTAÇÃO NA P0710  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",393,393,1,0,C
+MP0720,"MARCA DE IMPUTAÇÃO NA P0720  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",394,394,1,0,C
+MP0730,"MARCA DE IMPUTAÇÃO NA P0730 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",395,395,1,0,C
+MP0740,"MARCA DE IMPUTAÇÃO NA P0740 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",396,396,1,0,C
+MP0750,"MARCA DE IMPUTAÇÃO NA P0750 
+ 0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",397,397,1,0,C
+MP0800,"MARCA DE IMPUTAÇÃO NA P0800  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",398,398,1,0,C
+MP0810,"MARCA DE IMPUTAÇÃO NA P0810  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",399,399,1,0,C
+MP0820,"MARCA DE IMPUTAÇÃO NA P0820  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",400,400,1,0,C
+MP0830,"MARCA DE IMPUTAÇÃO NA P0830  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",401,401,1,0,C
+MP0840,"MARCA DE IMPUTAÇÃO NA P0840  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",402,402,1,0,C
+MP0850,"MARCA DE IMPUTAÇÃO NA P0850  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",403,403,1,0,C
+MP0860,"MARCA DE IMPUTAÇÃO NA P0860  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",404,404,1,0,C
+MP0870,"MARCA DE IMPUTAÇÃO NA P0870  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",405,405,1,0,C
+MP0880,"MARCA DE IMPUTAÇÃO NA P0880  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",406,406,1,0,C 
+MP0890,"MARCA DE IMPUTAÇÃO NA P0890  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",407,407,1,0,C 
+MP0900,"MARCA DE IMPUTAÇÃO NA P0900  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",408,408,1,0,C 
+MP0970,"MARCA DE IMPUTAÇÃO NA P0970  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",409,409,1,0,C 
+MP0980,"MARCA DE IMPUTAÇÃO NA P0980  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",410,410,1,0,C 
+MP0990,"MARCA DE IMPUTAÇÃO NA P0990  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",411,411,1,0,C 
+MP1000,"MARCA DE IMPUTAÇÃO NA P1000  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",412,412,1,0,C 
+MP1010,"MARCA DE IMPUTAÇÃO NA P1010  
+0 - Não Imputado
+1 - Imputado",413,413,1,0,C 
+MP1050,"MARCA DE IMPUTAÇÃO NA P1050  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",414,414,1,0,C 
+MP1060,"MARCA DE IMPUTAÇÃO NA P1060  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",415,415,1,0,C 
+MP1070,"MARCA DE IMPUTAÇÃO NA P1070  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",416,416,1,0,C 
+MP1080,"MARCA DE IMPUTAÇÃO NA P1080  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",417,417,1,0,C 
+MP1090,"MARCA DE IMPUTAÇÃO NA P1090  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",418,418,1,0,C 
+MP1100,"MARCA DE IMPUTAÇÃO NA P1100  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",419,419,1,0,C 
+MP1120,"MARCA DE IMPUTAÇÃO NA P1120  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",420,420,1,0,C 
+MP1130,"MARCA DE IMPUTAÇÃO NA P1130  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",421,421,1,0,C 
+MP1140,"MARCA DE IMPUTAÇÃO NA P1140  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",422,422,1,0,C 
+MP1150,"MARCA DE IMPUTAÇÃO NA P1150  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",423,423,1,0,C 
+MP1160,"MARCA DE IMPUTAÇÃO NA P1160  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",424,424,1,0,C 
+MP1170,"MARCA DE IMPUTAÇÃO NA P1170  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",425,425,1,0,C 
+MP1180,"MARCA DE IMPUTAÇÃO NA P1180  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",426,426,1,0,C 
+MP1200,"MARCA DE IMPUTAÇÃO NA P1200  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",427,427,1,0,C 
+MP1210,"MARCA DE IMPUTAÇÃO NA P1210  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",428,428,1,0,C 
+MP1220,"MARCA DE IMPUTAÇÃO NA P1220  
+0 - Não Imputado
+1 - Imputado
+9 - Não aplicável",429,429,1,0,C 
