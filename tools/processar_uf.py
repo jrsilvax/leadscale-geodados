@@ -50,7 +50,12 @@ def ler_agregado(padrao, colunas):
             it = pd.read_csv(z.open(nome), sep=sep, dtype=str, chunksize=200000, encoding=enc)
             partes = []
             for ch in it:
-                ch.columns = [c.strip().upper() for c in ch.columns]
+                ch.columns = [c.replace("\ufeff", "").strip().strip('"').upper() for c in ch.columns]
+                if "CD_SETOR" not in ch.columns:
+                    alvo = [c for c in ch.columns if "SETOR" in c] or [ch.columns[0]]
+                    print("coluna do setor:", alvo[0], "| colunas:", list(ch.columns)[:8], flush=True)
+                    ch = ch.rename(columns={alvo[0]: "CD_SETOR"})
+                ch = ch[ch["CD_SETOR"].notna()]
                 ch = ch[ch["CD_SETOR"].str.startswith(str(UF_COD))]
                 keep = ["CD_SETOR"] + [c for c in colunas if c in ch.columns]
                 partes.append(ch[keep])
