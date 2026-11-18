@@ -1,0 +1,23 @@
+name: 1 - Catalogar arquivos do IBGE
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  catalogo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - run: python tools/catalogo.py
+      - name: Salvar no repositório
+        run: |
+          git config user.name "geodados-bot"
+          git config user.email "geodados-bot@users.noreply.github.com"
+          git add catalogo
+          git commit -m "Catálogo dos arquivos do IBGE" || echo "nada novo"
+          git push
