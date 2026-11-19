@@ -8,6 +8,10 @@ O IBGE não abre a partir do ambiente do Claude, então as automações (GitHub 
 
 Fonte de todos os dados: IBGE, Censo Demográfico 2022.
 
+## Padrão de vídeos
+
+Todo vídeo para Instagram segue [videos/PADRAO_VIDEOS_INSTAGRAM.md](videos/PADRAO_VIDEOS_INSTAGRAM.md) (área de segurança, guias e checagem).
+
 ## Como usar num estudo
 
 ```
