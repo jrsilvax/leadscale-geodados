@@ -106,6 +106,8 @@ def perfil(nome, lat0, lon0):
                   "loja_de_departamento": polo({"department_store"}), "hospital": polo({"hospital"})},
         "beleza_ate_300m_osm": C[(C.grupo == "beleza") & (C.d <= 300)][["nome", "tipo", "d"]].assign(d=lambda x: x.d.round()).to_dict("records"),
     }
+    out["cobertura_osm"] = ("fraca: poucas lojas cadastradas no OpenStreetMap em volta; completar a contagem com o Google Maps "
+                            "(tools/comercio_google.py) antes de usar a nota de comércio") if out["comercio"]["ate_400m"] < 10 else "ok"
     out["nota_ponto"] = nota(out)
     return out
 
@@ -114,14 +116,25 @@ def esc(v, pts):  # pts: [(limite, nota)] em ordem; v <= limite -> nota
         if v is not None and v <= lim: return n
     return pts[-1][1] if v is None else 0
 
+GOOGLE = {}
+if "--google" in ARGS:  # JSON de tools/comercio_google.py: {"nome do ponto": {"ate_200m": n, "na_rua_300m": n}}
+    GOOGLE = json.load(open(ARGS[ARGS.index("--google") + 1]))
+
 def nota(o):
     """Nota do ponto, 0 a 10. Pesos: via e visibilidade 35, comércio em volta 30, polos 20, transporte 15.
     Regras absolutas, para servir a um ponto sozinho; calibradas nas unidades Gless (ver SKILL)."""
+    g = GOOGLE.get(o["ponto"])
+    if g:  # usa a maior contagem entre OSM e Google
+        o["comercio"]["ate_200m"] = max(o["comercio"]["ate_200m"], g.get("ate_200m", 0))
+        o["comercio_na_rua_do_ponto_300m"] = max(o["comercio_na_rua_do_ponto_300m"], g.get("na_rua_300m", 0))
+        o["comercio_fonte"] = "OSM + Google Maps"
     f = o["via_em_frente"]; cls = f["classe_cod"] if f and f["dist_m"] <= 40 else 7
     via = {1: 8, 2: 10, 3: 10, 4: 8, 5: 5, 6: 3, 7: 3}[cls]
     a = o["avenida_principal_mais_proxima"]; dav = a["dist_m"] if a else None
     if cls > 3 and dav is not None:
         via = max(via, esc(dav, [(60, 8), (120, 6.5), (200, 5), (10**9, via)]))
+    if cls > 3 and o["comercio_na_rua_do_ponto_300m"] >= 8:  # rua comercial (o OSM costuma classificá-la como residencial)
+        via = max(via, 7 if o["comercio_na_rua_do_ponto_300m"] < 15 else 8)
     if o["esquina"]:
         via += 1.5 if o["esquina"]["maior_classe"] in ("avenida principal", "avenida secundária", "via coletora") else 0.75
     via = min(10, via)
