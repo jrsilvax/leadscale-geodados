@@ -1,0 +1,58 @@
+name: 3 - Camada de rua (OpenStreetMap)
+on:
+  workflow_dispatch:
+    inputs:
+      uf:
+        description: "Sigla do estado (ex.: SP)"
+        required: true
+        default: "SP"
+permissions:
+  contents: write
+jobs:
+  osm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq osmium-tool
+          pip install osmium pandas
+      - name: Baixar e recortar o OpenStreetMap do estado
+        run: |
+          UF="${{ github.event.inputs.uf }}"
+          case "$UF" in
+            AC|AP|AM|PA|RO|RR|TO) REG=norte;;
+            AL|BA|CE|MA|PB|PE|PI|RN|SE) REG=nordeste;;
+            DF|GO|MT|MS) REG=centro-oeste;;
+            ES|MG|RJ|SP) REG=sudeste;;
+            PR|RS|SC) REG=sul;;
+            *) echo "UF inválida"; exit 1;;
+          esac
+          curl -sSL -o regiao.osm.pbf "https://download.geofabrik.de/south-america/brazil/${REG}-latest.osm.pbf"
+          ls -la regiao.osm.pbf
+          BBOX=$(python -c "
+          import pandas as pd
+          s=pd.read_csv('data/setores_${UF}.csv.gz',usecols=['lat','lon'])
+          print(f'{s.lon.min()-0.03},{s.lat.min()-0.03},{s.lon.max()+0.03},{s.lat.max()+0.03}')")
+          echo "bbox $BBOX"
+          osmium extract -b "$BBOX" regiao.osm.pbf -o uf.osm.pbf --overwrite
+          rm regiao.osm.pbf
+          osmium tags-filter uf.osm.pbf \
+            w/highway=motorway,trunk,primary,secondary,tertiary,unclassified,residential,living_street,pedestrian,motorway_link,trunk_link,primary_link,secondary_link,tertiary_link \
+            nw/shop nw/amenity nw/office nw/craft nw/healthcare nw/leisure=fitness_centre,sports_centre nw/tourism=hotel \
+            n/highway=bus_stop nw/public_transport nw/railway=station,subway_entrance,halt,tram_stop nw/building=retail \
+            -o filtrado.osm.pbf --overwrite
+          ls -la filtrado.osm.pbf
+      - run: python tools/processar_osm.py "${{ github.event.inputs.uf }}" filtrado.osm.pbf
+      - name: Salvar no repositório
+        run: |
+          rm -f *.osm.pbf
+          git config user.name "geodados-bot"
+          git config user.email "geodados-bot@users.noreply.github.com"
+          git add data/osm
+          git commit -q -m "Camada de rua (OpenStreetMap) ${{ github.event.inputs.uf }}" || echo "nada novo"
+          git pull --rebase -q
+          git push -q
