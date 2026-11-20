@@ -31,8 +31,24 @@ jobs:
             PR|RS|SC) REG=sul;;
             *) echo "UF inválida"; exit 1;;
           esac
-          curl -sSL -o regiao.osm.pbf "https://download.geofabrik.de/south-america/brazil/${REG}-latest.osm.pbf"
-          ls -la regiao.osm.pbf
+          case "$UF" in
+            AC) EST=acre;; AL) EST=alagoas;; AP) EST=amapa;; AM) EST=amazonas;; BA) EST=bahia;; CE) EST=ceara;;
+            DF) EST=distrito_federal;; ES) EST=espirito_santo;; GO) EST=goias;; MA) EST=maranhao;; MT) EST=mato_grosso;;
+            MS) EST=mato_grosso_do_sul;; MG) EST=minas_gerais;; PA) EST=para;; PB) EST=paraiba;; PR) EST=parana;;
+            PE) EST=pernambuco;; PI) EST=piaui;; RJ) EST=rio_de_janeiro;; RN) EST=rio_grande_do_norte;;
+            RS) EST=rio_grande_do_sul;; RO) EST=rondonia;; RR) EST=roraima;; SC) EST=santa_catarina;;
+            SP) EST=sao_paulo;; SE) EST=sergipe;; TO) EST=tocantins;;
+          esac
+          for URL in "https://download.geofabrik.de/south-america/brazil/${REG}-latest.osm.pbf" \
+                     "https://download.openstreetmap.fr/extracts/south-america/brazil/${REG}/${EST}-latest.osm.pbf" \
+                     "https://download.openstreetmap.fr/extracts/south-america/brazil/${EST}-latest.osm.pbf" \
+                     "https://download.geofabrik.de/south-america/brazil-latest.osm.pbf"; do
+            echo "tentando $URL"
+            curl -sSL -A "leadscale-geodados (github actions)" -o regiao.osm.pbf "$URL" || true
+            SZ=$(stat -c %s regiao.osm.pbf 2>/dev/null || echo 0); echo "tamanho $SZ"
+            if [ "$SZ" -gt 1000000 ]; then break; else head -c 400 regiao.osm.pbf; echo; fi
+          done
+          [ "$(stat -c %s regiao.osm.pbf)" -gt 1000000 ] || { echo "falha no download"; exit 1; }
           BBOX=$(python -c "
           import pandas as pd
           s=pd.read_csv('data/setores_${UF}.csv.gz',usecols=['lat','lon'])
